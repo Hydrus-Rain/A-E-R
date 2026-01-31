@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<Defs>
-  <HediffDef ParentName="InjuryBase">
-    <defName>Hediff_SonicShock</defName>
-    <label>sonic shock</label>
-    <description>TBA - disoriented by piercing ultrasonic vibrations.</description>
-  </HediffDef>
-</Defs>
