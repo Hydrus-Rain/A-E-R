@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+
+  <!-- ============================================================= Pale Seed ============================================================== -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>AER_Paleseed</defName>
+    <label>"Pale Leshen" Seed</label>
+    <description>A hardy seed of a symbiotic plant capable of adapting to the form of its host, and with artificial manipulation perhaps it may be capable of more.</description>
+    <stackLimit>15</stackLimit>
+    <graphicData>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Things/Items/Primal/PaleSeed</texPath>
+    </graphicData>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <MarketValue>2.65</MarketValue>
+      <Mass>0.3</Mass>
+      <Beauty>1</Beauty>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+
+  <!-- =================================   Thrumbo Axe ================================= -->
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>AER_Thrumbohalb</defName>
+    <label>Thrumbo Halberd</label>
+    <description>A Massive melee polearm fashioned from the horn of a thrumbo.</description>
+    <graphicData>
+	<drawSize>1.59,1.59</drawSize>
+      <texPath>Things/Equipment/Weapons/Experimental/Thrumboaxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <techLevel>Industrial</techLevel>
+	
+	<costList>
+      <ThrumboHorn>1</ThrumboHorn>
+      <Steel>125</Steel>
+	  <Leather_Thrumbo>75</Leather_Thrumbo>
+    </costList>
+	
+    <statBases>
+      <WorkToMake>5150</WorkToMake>
+      <Mass>1.1</Mass>
+    </statBases>
+
+	<recipeMaker>
+	
+	<recipeUsers>
+		<li>FueledSmithy</li>
+		<li>ElectricSmithy</li>
+		<li>FabricationBench</li>
+	</recipeUsers>
+	
+      <researchPrerequisite>EXAugserums</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>550</displayPriority>
+	  
+    </recipeMaker>
+		
+    <tools>
+	
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  
+      <li>
+        <label>Axehead</label>
+        <capacities>
+		  <li>Cut</li>
+        </capacities>
+        <power>30.5</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+	  
+    </tools>
+    
+  </ThingDef>
+  
+</Defs>
