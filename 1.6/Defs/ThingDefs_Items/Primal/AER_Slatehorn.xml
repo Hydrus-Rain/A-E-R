@@ -7,7 +7,7 @@
     <graphicData>
       <texPath>Things/Items/Primal/Slatehorn/Slatehorn</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-	  <drawSize>1.1</drawSize>
+	  <drawSize>1.2</drawSize>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <statBases>
