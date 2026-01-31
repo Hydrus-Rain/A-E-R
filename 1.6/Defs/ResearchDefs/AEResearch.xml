@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================================= Augmentation Serum Progression ================================= -->
+
+<!-- =================================  Augmentation Serum Basis ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>AugserumBasis</defName>
+    <label>Augmentation Serum Basic Tech</label>
+    <description>Begin research on creating controlled augmentation serums. Using the genetic material of the local wildlife, mechanite bio-reconstruction, and engineered biochemicals, we could make serums that change the biology of the injected subject, making them faster, stronger, or even into something else entirely.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+	
+	<prerequisites><li>ABRT1</li></prerequisites>
+		
+  <researchViewX>1.00</researchViewX>
+  <researchViewY>0.10</researchViewY>
+  
+    <discoveredLetterTitle>Basic Augmentation Serums</discoveredLetterTitle>
+    <discoveredLetterText>You've learned how to create special serums, useable in augmenting living organisms.</discoveredLetterText>
+  </ResearchProjectDef>
+    
+	<!-- =================================  Experimental Augmentation Serums ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>EXAugserums</defName>
+    <label>Experimental Augmentation Serum Tech</label>
+    <description>With the Foundational Basis of the Augmentation serums complete, we can begin practical testing. And what better candidate to use like the mysterious thrumbo?</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Spacer</techLevel>
+
+	<prerequisites><li>AugserumBasis</li></prerequisites>
+
+  <researchViewX>2.00</researchViewX>
+  <researchViewY>1.80</researchViewY>
+  
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <discoveredLetterTitle>Experimental Augmentation Serums</discoveredLetterTitle>
+    <discoveredLetterText>Your Understanding of the basis of the Augmentation serum has expanded, allowing you to make more experimental serums. Do be warned though... Some of them are unstable.</discoveredLetterText>
+  </ResearchProjectDef>
+
+	<!-- =================================  Paragon Augmentation Serums ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>ParagonAugserums</defName>
+    <label>Paragon Augmentation Serum Tech</label>
+    <description>After a Lifetime's worth of research and development, the augmentation serum has been finally improved, allowing for more "Stable" augmentations, even when using more exotic materials.</description>
+    <baseCost>5500</baseCost>
+    <techLevel>Spacer</techLevel>
+	
+	<prerequisites><li>EXAugserums</li></prerequisites>
+  
+  <researchViewX>3.00</researchViewX>
+  <researchViewY>0.00</researchViewY>
+  
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <discoveredLetterTitle>Paragon-Class Augmentation Serums</discoveredLetterTitle>
+    <discoveredLetterText>We've learned how to create Paragon-Class serums, which are stronger than the average serum, but much more stable compared to the Experimental variants.</discoveredLetterText>
+  </ResearchProjectDef>
+  
+  	<!-- =================================  Apex Augmentation Serums ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>ApexAugserums</defName>
+    <label>Apex Augmentation Serum Tech</label>
+    <description>After a Lifetime's worth of research and development, the augmentation serum has been finally improved, allowing for more "Stable" augmentations, even when using more exotic materials.</description>
+    <baseCost>5500</baseCost>
+    <techLevel>Spacer</techLevel>
+	
+	<prerequisites><li>ParagonAugserums</li></prerequisites>
+  
+  <researchViewX>4.00</researchViewX>
+  <researchViewY>1.80</researchViewY>
+  
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <discoveredLetterTitle>Apex-Class Augmentation Serums</discoveredLetterTitle>
+    <discoveredLetterText>We've learned how to create Apex-Class serums.</discoveredLetterText>
+  </ResearchProjectDef>
+
+	<!-- ================================= Aberrant's Research Theorem ================================= -->
+
+<!-- =================================  Aberrant's Research Theorem T1 ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>ABRT1</defName>
+    <label>Aberrant's Research Theorem: Section 1</label>
+    <description>"This Theorem of mine, i dedicate to those brave enough to traverse the Unknown, and seek to follow my footsteps. Though you may be lost as i once were, let my trail be your guide into the strange and the anomalous." - Written by Researcher "A".</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+		
+  <researchViewX>0.00</researchViewX>
+  <researchViewY>1.00</researchViewY>
+  
+    <discoveredLetterTitle>Aberrant's Research Theorem: Section 1</discoveredLetterTitle>
+    <discoveredLetterText>"Before stepping into the unknowable to understand that which is unknown, the research and preparation begins." -"A"</discoveredLetterText>
+  </ResearchProjectDef>
+
+<!-- =================================  Aberrant's Research Theorem T2 ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>ABRT2</defName>
+    <label>Aberrant's Research Theorem: Section 2</label>
+    <description>"This Part of my Theorem shall refer to things within these strange lands i still scarcely understand, such as the Magnificent Adaptations of the Primals or the Extreme changes of the Aberrants and hopefully, whoever is reading this can glean insights from what i may have missed, and hopefully they can verify the results and information even if my time has passed. After all, not even cryptosleep can spare you from time." -"A"</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Spacer</techLevel>
+		
+	<prerequisites><li>ABRT1</li></prerequisites>
+
+  <researchViewX>1.00</researchViewX>
+  <researchViewY>1.00</researchViewY>
+  
+    <discoveredLetterTitle>Aberrant's Research Theorem: Section 2</discoveredLetterTitle>
+    <discoveredLetterText>"And with preparations as ready as we can be, From here on out the dive into the Unknown truly begins." -"A"</discoveredLetterText>
+  </ResearchProjectDef>
+  
+  <!-- =================================  Aberrant's Research Theorem T3 ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>ABRT3</defName>
+    <label>Aberrant's Research Theorem: Section 3</label>
+    <description>"TBE".</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Spacer</techLevel>
+		
+	<prerequisites><li>ABRT2</li></prerequisites>
+
+  <researchViewX>2.00</researchViewX>
+  <researchViewY>1.00</researchViewY>
+  
+    <discoveredLetterTitle>Aberrant's Research Theorem: Section 3</discoveredLetterTitle>
+    <discoveredLetterText>"The fundamental laws of the universe as we know it are ignored by these phenomena, and thus we must adapt as humanity has done for ages past." -"A"</discoveredLetterText>
+  </ResearchProjectDef>
+  
+    <!-- =================================  Aberrant's Research Theorem T4 ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>ABRT4</defName>
+    <label>Aberrant's Research Theorem: Section 4</label>
+    <description>"TBE".</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Spacer</techLevel>
+		
+	<prerequisites><li>ABRT3</li></prerequisites>
+
+  <researchViewX>3.00</researchViewX>
+  <researchViewY>1.00</researchViewY>
+  
+    <discoveredLetterTitle>Aberrant's Research Theorem: Section 4</discoveredLetterTitle>
+    <discoveredLetterText>"To grasp at the stars in the night sky, no matter how distant they may be is something our ancestors have done long before we even knew what iron was. In a sense, the path we are treading is not much different." -"A".</discoveredLetterText>
+  </ResearchProjectDef>
+
+	<!-- ================================= EXOTIC PROJECTS ================================= -->
+	
+		<!-- =================================  Project: Pioneers's Standard ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>ProjectPioneerStandard</defName>
+    <label>Project: Pioneer's Standard</label>
+    <description>With the Emergence of these new unstable zones, new equipment had to be produced in response, each requiring siuationally adaptable mechanisms yet also having the capability of being maintainable even in Extreme conditions far away from resupply points.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    
+	<prerequisites><li>ABRT1</li><li>Gunsmithing</li></prerequisites>
+  
+  <researchViewX>1.00</researchViewX>
+  <researchViewY>1.90</researchViewY>
+
+    <discoveredLetterTitle>Project: Pioneer's Mark</discoveredLetterTitle>
+    <discoveredLetterText>We have now discovered how to create equipment that can fullfill the parameters that require ease of maintenance and adaptability in most situations with the application of advanced engineering technologies.</discoveredLetterText>
+  </ResearchProjectDef>
+	
+	<!-- =================================  Project: Calcified Leshen ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>ProjectPaleLeshen</defName>
+    <label>Project: Calcified Evergreen Leshen</label>
+    <description>Within the Anomalous Zones, a few Pioneers discovered a species of symbiotic plant capable of growing around a nearby object, then calcifying its bark and moving using its softer insides resulting in a "living creature" with a ghastly, root bound appearance. This Project aims to use augment serums to modify those seeds to our benefit.</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Spacer</techLevel>
+    
+	<prerequisites><li>ProjectPioneerStandard</li></prerequisites>
+  
+  <researchViewX>2.00</researchViewX>
+  <researchViewY>0.10</researchViewY>
+
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <discoveredLetterTitle>Mechanite Augmentation Serums</discoveredLetterTitle>
+    <discoveredLetterText>Using the technology for the Augserums, we have discovered how to edit and manipulate the Pale "Leshen" seeds we have gathered to our uses.</discoveredLetterText>
+  </ResearchProjectDef>
+  
+	<!-- =================================  Project: Unyielding Corpus ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>ProjectUnyieldingCorpus</defName>
+    <label>Project: The Unyielding Corpus</label>
+    <description>Using the Mechanites for more than simple bodily reconstruction, we could reprogram more of them per dose to create a serum that enhances regeneration akin to Luciferium. Only this time the subject would most likely die of starvation due to increased cellular activity instead of cellular degradation.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    
+	<prerequisites><li>ProjectPaleLeshen</li></prerequisites>
+  
+  <researchViewX>3.00</researchViewX>
+  <researchViewY>1.80</researchViewY>
+
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <discoveredLetterTitle>Mechanite Augmentation Serums</discoveredLetterTitle>
+    <discoveredLetterText>Using the technology for the Augserums, we have discovered ways to increase regenerative capabilities of living organisms, albeit at the cost of increased metabolic activity.</discoveredLetterText>
+  </ResearchProjectDef>
+
+	<!-- =================================  Project: Ferranimus ================================= -->
+  <ResearchProjectDef>
+    <tab>AER</tab>
+    <defName>ProjectFerranimus</defName>
+    <label>Project: Ferra Animus</label>
+    <description>An experimental project which aims to simulate the capabilities of Aberrant Entities Using technology.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Ultra</techLevel>
+    
+	<prerequisites><li>ProjectUnyieldingCorpus</li></prerequisites>
+  
+  <researchViewX>4.00</researchViewX>
+  <researchViewY>0.20</researchViewY>
+  
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <discoveredLetterTitle>Project: Ferra Animus Completed</discoveredLetterTitle>
+    <discoveredLetterText>Using the technology for the Augserums, we have discovered ways to increase regenerative capabilities of living organisms, albeit at the cost of increased metabolic activity.</discoveredLetterText>
+  </ResearchProjectDef>
+
+</Defs>
+	<!-- ================================= <prerequisites><li>EXAugserums</li></prerequisites> ================================= -->
+
+

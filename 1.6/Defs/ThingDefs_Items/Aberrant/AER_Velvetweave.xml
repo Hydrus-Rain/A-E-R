@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <ThingDef ParentName="LeatherBase">
+    <defName>AER_Velvetweave</defName>
+    <label>Velvetweave</label>
+    <description>A velvety fabric made from the fibrous leaves of the ribbon tree found in the Aberrant Glades. In terms of Quality, its somewhere between devilstrand and synthread.</description>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <StuffPower_Armor_Sharp>1.05</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>2.00</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Items/Aberrant/Velvetweave</texPath>
+    </graphicData>
+    <stuffProps>      
+	<color>(93,0,144)</color>
+      <commonality>0.0035</commonality>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <Beauty>1.8</Beauty>
+      </statFactors>
+    </stuffProps>
+
+  </ThingDef>
+</Defs>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <ThingDef ParentName="LeatherBase">
+    <defName>AER_Slatehorn</defName>
+    <label>Slatehorn</label>
+    <description>The Thick, Rocklike horn found on brushbeasts. Decent as a melee weapon, but better off used as a material.</description>
+    <graphicData>
+      <texPath>Things/Items/Primal/Slatehorn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <statBases>
+      <MarketValue>650</MarketValue>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Mass>2.3</Mass>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>20</stackLimit>
+    <relicChance>1</relicChance>
+    <comps>
+      <li Class="CompProperties_Styleable"></li>
+    </comps>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Scratch</li>
+          <li>Stab</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>AnimalPart</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+  </ThingDef>
+</Defs>
