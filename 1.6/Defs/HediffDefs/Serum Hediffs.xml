@@ -1,6 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 
+<!-- =================================                          -Serum Abstract Base-                        ================================= -->
+  <HediffDef Name="AER_BaseSerum" Abstract="True">
+    <defName>AER_BaseSerum</defName>
+    <label>SerumBase</label>
+    <description>An augmentation serum made from biological matter and mechanites, made to modify and enhance living organisms. Usually lasts for a week before needing to be reapplied.</description>
+	
+	<tags><li>AugSerum</li></tags>
+	
+	<removeWithTags><li>AugSerum</li></removeWithTags>
+	
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+	<hediffClass>HediffWithComps</hediffClass>
+	
+  </HediffDef>
+
 <!-- =================================                          -T1 Regular Base Serums-                        ================================= -->
   
   
@@ -9,7 +26,7 @@
   <HediffDef>
     <defName>AER_ThermEnzymeAugment</defName>
     <label>Emberbloom Enzyme Serum</label>
-    <description>A serum made from emberbloom and genobulbs, made to increase tolerance against high temperatures. lasts for a week before needing to be reapplied.</description>
+    <description>A serum made from emberbloom and genobulb enzymes, made to increase cellular wall tolerance against high temperatures. lasts for a week before needing to be reapplied.</description>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
@@ -36,7 +53,7 @@
 <!-- =================================                          -T2 Experimental Augmentation Serums-                        ================================= -->
 
 <!-- =================================      Thrumbo Serum Augmentation    ================================= -->
-  <HediffDef>
+  <HediffDef ParentName="AER_BaseSerum">
     <defName>AER_ThrumboSerumAugment</defName>
     <label>Thrumbo Serum Augmentation</label>
     <description>An augmentation serum that restructures the body using a template extracted from thrumbo genes using mechanites, making them tougher and more resistant to temperature changes. Has the side effect of making the pawn slower due to the extra mass, and turns their hair white.</description>
@@ -70,7 +87,7 @@
   </HediffDef>
   
   <!-- =================================      AmberWyrm Serum Augmentation    ================================= -->
-  <HediffDef>
+  <HediffDef ParentName="AER_BaseSerum">
     <defName>AER_AmberwyrmSerumAugment</defName>
     <label>AmberWyrm Serum Augmentation</label>
     <description>An augmentation serum that restructures the body using a template extracted from ashen wyrm genes using mechanites, making the creature affected by this serum more resistant to heat and fire but less so against the cold and physical damage, alongside making their hair change to the same hue as the Keratin of the wyrms.</description>
@@ -107,7 +124,7 @@
 <!-- =================================                          -T4 Apex Augmentation Serums-                        ================================= -->
 
   <!-- =================================      Primordial Jade Serum Augmentation    ================================= -->
-  <HediffDef>
+  <HediffDef ParentName="AER_BaseSerum">
     <defName>AER_PrimalJadeSerumAugment</defName>
     <label>Primordial Jade Serum Augmentation</label>
     <description>TBE.</description>
@@ -133,9 +150,40 @@
           <ComfyTemperatureMin>-10</ComfyTemperatureMin>
           <ComfyTemperatureMax>25</ComfyTemperatureMax>
         </statOffsets>
+		<capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1.7</setMax>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>1.2</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>1.2</offset>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>1.2</offset>
+          </li>
+          <li>
+            <capacity>Metabolism</capacity>
+            <offset>1.5</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>1.15</offset>
+          </li>
+		</capMods>
       </li>
+	  	
     </stages>
 	
+
+	
   </HediffDef>
+  
+  
 
 </Defs>

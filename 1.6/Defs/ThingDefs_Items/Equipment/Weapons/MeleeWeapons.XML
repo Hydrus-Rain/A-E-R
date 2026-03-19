@@ -7,7 +7,7 @@
     <label>Thrumbo Halberd</label>
     <description>A Massive melee polearm fashioned from the horn of a thrumbo.</description>
     <graphicData>
-	<drawSize>1.59,1.59</drawSize>
+	<drawSize>1.7,1.7</drawSize>
       <texPath>Things/Equipment/Weapons/Experimental/Thrumboaxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>

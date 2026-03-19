@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+
+  <HediffDef Name="AER_MycogenicAffliction" Abstract="True">
+    <defName>AER_Mycogenic</defName>
+    <label>Mycogenic Affliction</label>
+    <description>An affliction caused by exposure to mutagenic mycoid spores. Can be cured using a certain medicine.</description>
+	
+	<tags><li>Mycoinfection</li></tags>
+	
+	<removeWithTags><li>Mycoinfection</li></removeWithTags>
+	
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+	<hediffClass>HediffWithComps</hediffClass>
+	
+  </HediffDef>
+
+  <HediffDef ParentName="AER_MycogenicAffliction">
+    <defName>AER_Mycogenicinfection</defName>
+    <label>Mycogenic Infection</label>
+    <description>A fatal disease caused by exposure to mycoid mutagens. Can be cured using Mycoid Salves and stalled by tending.</description>
+	
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>1</lethalSeverity>
+    <tendable>true</tendable>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>12</baseTendDurationHours>
+        <severityPerDayTended>-0.13</severityPerDayTended>
+      </li>
+      <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+      </li>
+	  <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.94</severityPerDayNotImmune>
+        <immunityPerDaySick>0.16</immunityPerDaySick>
+        <severityPerDayImmune>-0.10</severityPerDayImmune>
+        <immunityPerDayNotSick>-0.005</immunityPerDayNotSick>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>minor</label>
+        <painOffset>0.05</painOffset>
+      </li> 
+      <li>
+        <minSeverity>0.33</minSeverity>
+        <label>major</label>
+        <painOffset>0.08</painOffset>
+      </li>
+      <li>
+        <minSeverity>0.78</minSeverity>
+        <label>extreme</label>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.12</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.87</minSeverity>
+        <label>extreme</label>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.85</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+   <HediffDef ParentName="AER_MycogenicAffliction">
+  
+    <defName>AER_MycogenCure</defName>
+    <label>Receding Mycogenic Infection</label>
+    <description>A receding mycoid infection, cured using a mycoid salve. takes a while to work and fogs their consciousness.</description>
+	
+	<tags><li>Mycoinfection</li></tags>
+	
+	<initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>	
+	
+	<comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>6000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+	
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <label>Curing</label>
+        <painFactor>0</painFactor>
+		
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.50</setMax>
+          </li>
+        </capMods>
+		
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="BurnBase">
+    <defName>Hediff_FireDustBurn</defName>
+    <label>burning powder</label>
+    <description>TBA - skin scorched by incendiary wing powder.</description>
+  </HediffDef>
+  
+    <HediffDef ParentName="DiseaseBase">
+  
+    <defName>AER_NeuralShock</defName>
+    <label>Neurological Shock</label>
+    <description>An affliction that robs those affected of their capability to move or act much like a mechanoid affected by an EMP, which is caused by a sudden jolt across their entire nervous system, disrupting signlas sent along the nervous system.</description>
+	
+	<initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>	
+	
+	<comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>6000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+	
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <label>Disabled</label>
+        <painFactor>0</painFactor>
+		
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.01</setMax>
+          </li>
+        </capMods>
+		
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

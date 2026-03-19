@@ -1,9 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
+
+	<!-- ================================= Tyrian Weavercrab ================================= -->
+
   <ThingDef ParentName="AnimalThingBase">
     <defName>AER_TyrianWeavercrab</defName>
     <label>Tyrian Weaver crab</label>
-    <description>A large, land dwelling crab known for weaving nests out of fallen ribbontree leaves, stones, and its own saliva, resulting in rocky nests accented with a rich purple.</description>
+    <description>A large, land dwelling crab with a notably painful vice grip for a claw, known for weaving homes out of fallen ribbontree leaves, stones, and its own saliva, resulting in rocky nests accented with a rich purple. An omnivorous creature capable of eating just about any organic matter, which makes it quite a great low maintenance pet or living corpse disposal for most.</description>
     <statBases>
       <MoveSpeed>2.2</MoveSpeed>
       <MarketValue>120</MarketValue>
@@ -22,7 +25,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>9</power>
+        <power>12</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
       </li>
@@ -32,7 +35,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>9</power>
+        <power>12</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
       </li>
@@ -49,15 +52,21 @@
       </li>
     </tools>
 
+	<!-- ================================= Tyrian Weavercrab Race ================================= -->
     <race>
       <body>AERBody_WeaverCrab</body>
       <baseBodySize>0.5</baseBodySize>
       <baseHungerRate>0.12</baseHungerRate>
-      <baseHealthScale>0.6</baseHealthScale>
+      <baseHealthScale>1.4</baseHealthScale>
       <foodType>OmnivoreRoughAnimal</foodType>
-      <lifeExpectancy>15</lifeExpectancy>
+      <lifeExpectancy>25</lifeExpectancy>
       <waterSeeker>false</waterSeeker>
+	  
+	  <leatherDef>AER_AberrantChitin</leatherDef>
+	  
       <gestationPeriodDays>7.661</gestationPeriodDays>
+	  <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.13</manhunterOnDamageChance>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -100,8 +109,10 @@
     </tradeTags>
   </ThingDef>
 
+	<!-- ================================= Tyrian Weavercrab Pawnkind ================================= -->
+
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>AER_Weavercrab</defName>
+    <defName>AER_TyrianWeavercrab</defName>
     <label>Tyrian Weaver Crab</label>
     <race>AER_TyrianWeavercrab</race>
     <combatPower>80</combatPower>

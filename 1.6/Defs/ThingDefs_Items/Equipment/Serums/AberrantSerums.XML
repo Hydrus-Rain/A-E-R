@@ -1,4 +1,54 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 
+  <!-- =================================   Antimycogen Salve   ================================= -->
+
+	<ThingDef ParentName="AER_SerumBase">
+    <defName>AER_Antimycogen</defName>
+	
+    <label>Anti-mycogen salve</label>
+    <description>A salve made using antibodies synthesized from mycogenic spores. designed to counteract mycogenic salves.</description>
+    	
+    <graphicData>
+      <texPath>Things/Items/Serums/ThrumboSerum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+    <rotatable>false</rotatable>
+	
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MarketValue>100</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+	
+	<thingClass>ThingWithComps</thingClass>
+    <techLevel>Industrial</techLevel>
+	
+	 <ingestible>
+	 <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AER_MycogenCure</hediffDef>
+          <severity>1</severity>
+        </li>
+	</outcomeDoers>
+	</ingestible>
+	
+    <recipeMaker>
+      <researchPrerequisite>ABRT1</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <displayPriority>1500</displayPriority>
+    </recipeMaker>
+	
+    <costList>
+      <Neutroamine>75</Neutroamine>
+	  <Steel>20</Steel>
+	  <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
 </Defs>

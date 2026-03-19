@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  
+    <ThingDef ParentName="LeatherBase">
+    <defName>AER_AberrantChitin</defName>
+	
+    <label>Aberrant Chitin</label>
+	
+    <description>A cluster of twisted chitinous material extracted from the living beings that dwell in the aberrant glades. Has the odd property of becoming malleable when heated, and becoming capable of joining seamlessly with other chitin samples from different organisms. Resistant to wear and tear, but resists temperature and insulates horribly.</description>
+    	
+    <graphicData>
+	  <color>(91,76,86)</color>
+      <texPath>Things/Items/Aberrant/AberrantChitin</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>0.5</Mass>
+      <StuffPower_Armor_Sharp>1.9</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1.45</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.30</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+    </statBases>
+
+    <stuffProps>      
+	<color>(93,0,144)</color>
+      <commonality>0.0035</commonality>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <Beauty>1.1</Beauty>
+      </statFactors>
+    </stuffProps>
+
+  </ThingDef>
+  
+ </Defs>

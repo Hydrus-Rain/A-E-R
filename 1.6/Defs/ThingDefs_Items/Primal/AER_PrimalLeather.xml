@@ -13,6 +13,7 @@
     </statBases>
     <graphicData>
       <texPath>Things/Items/Primal/PrimalLeather</texPath>
+	        <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <stuffProps>      
 	<color>(0,48,7)</color>

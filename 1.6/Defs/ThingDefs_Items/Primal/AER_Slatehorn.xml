@@ -5,9 +5,9 @@
     <label>Slatehorn</label>
     <description>The Thick, Rocklike horn found on brushbeasts. Decent as a melee weapon, but better off used as a material.</description>
     <graphicData>
-      <texPath>Things/Items/Primal/Slatehorn/Slatehorn</texPath>
+      <texPath>Things/Items/Primal/Slatehorn</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-	  <drawSize>1.2</drawSize>
+	  <drawSize>1.9</drawSize>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <statBases>
